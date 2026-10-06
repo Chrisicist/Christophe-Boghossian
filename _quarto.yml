@@ -4,6 +4,8 @@ project:
 website:
   title: "Christophe BOGHOSSIAN"
   search: true
+  site-url: "https://Chrisicist.github.io/Christophe-Boghossian/"
+  description: "Portfolio et travaux de recherche de Christophe Boghossian"
   navbar:
     left:
       - href: index.qmd
@@ -19,3 +21,4 @@ format:
     css: styles.css
     toc: true
     html-math-method: katex
+
