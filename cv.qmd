@@ -1,0 +1,134 @@
+---
+title: "Curriculum Vitae"
+author: "Christophe BOGHOSSIAN"
+date: last-modified
+toc: true
+toc-title: "Sommaire"
+---
+
+[📄 Télécharger la version PDF](cv.pdf){.btn .btn-primary .mb-3 role="button" target="_blank"}
+
+## 👤 Informations personnelles
+
+- **Localisation :** France 
+- **Domaines d'expertise :** Physique, Astrophysique, Electromagnétisme, Mathématiques pour la Physique, Cosmologie, Statistiques.
+- **Outils clés :** Python (`NumPy`, `SciPy`, `Tensorflow`, `Astropy`), Fortran90, LaTeX, Quarto, Git, C++, Arduino.
+
+---
+
+## 🎓 Formation
+
+### Master Sciences de l'Univers et Technologies Spatiales (SUTS)
+**Spécialité Techniques Spatiales & Instrumentation (TSI)**  
+*Université de Toulouse* | **2025 — 2026**
+
+Formation axée sur la conception, le développement, la qualification et l'exploitation des systèmes spatiaux.
+
+* **Projets d'ingénierie spatiale :**
+  * **Mécanique orbitale & PATRIUS (CNES)** : simulation de trajectoires de transfert interplanétaire avec perturbations et calculs de traces au sol.
+  * **Ballon stratosphérique (Partenariat CNES)** : développement de l'architecture logicielle Arduino/radio, synchronisation d'horodatage embarqué et choix du sous-système télécom.
+  * **AOCS & CubeSat** : conception du système de contrôle d'attitude/orbite et étude de faisabilité (compromis capteurs/actuateurs, budget, intégration).
+  * **Mécanique structurelle & NASTRAN** : maillages 3D et analyses par éléments finis sous chargements statiques et dynamiques.
+  * **Instrumentation radio** : cartographie solaire par antenne radio sous Python (mesure du lobe et erreur de pointage).
+  * **Simulations C++** : développement d'outils performants pour la simulation de manœuvres orbitales sous contraintes mécaniques.
+
+---
+
+### Master Physique Fondamentale
+**Spécialité Astrophysique & Cosmologie**  
+*Aix-Marseille Université* | **2023 — 2025**
+
+Formation théorique et numérique approfondie (physique quantique, statistique, plasmas, cosmologie).  
+* **M2 en Échange Erasmus** (*Université de Bologne, Italie*) : spécialisation en cosmologie avancée, ondes gravitationnelles et milieu interstellaire.
+
+* **Projets de recherche & Analyse de données :**
+  * **Astrophysique (JWST/JADES)** : étude des galaxies à très haut redshift ($z > 8$) via la fonction de luminosité UV et la fonction de Schechter.
+  * **Cosmologie (eROSITA / XXL)** : comparaison du modèle d'énergie noire CPL au $\Lambda\text{CDM}$ à partir des données Rayons-X (Chandra/XMM-Newton).
+  * **Méthodes numériques (Python/Fortran90)** : simulation RK4 de la trajectoire de particules chargées dans le champ magnétique terrestre (ceintures de Van Allen).
+  * **Analyse statistique 2D/3D** : traitement de séries temporelles atmosphériques (autocorrélation, corrélation croisée, densité spectrale).
+  * **French Physicists Tournament 2024** : modélisation et expérimentation sur la planche de Galton et la tache de Poisson-Arago.
+  * **Détecteur de particules** : assemblage, étalonnage et acquisition de données sur un banc expérimental de sources radioactives (Bologne). 
+      
+
+### Licence en Physique
+**Parcours Physique & Modélisation**  
+*Aix-Marseille Université* | **2020 — 2023**
+
+Formation fondamentale en physique générale (mécanique quantique, thermodynamique, physique numérique, mathématiques, etc).
+
+* **Physique numérique & Modélisation :**
+  * **Mécanique spatiale** : optimisation de la trajectoire d'une sonde par résolution numérique du problème à $N$ corps.
+* **Option Astrophysique** (Observations menées à distance sur des télescopes placés en Suède) :
+  * **Détection d'exoplanètes par transit** : suivi photométrique continu pour mesurer la baisse de flux de l'étoile hôte.
+  * **Cartographie de la Voie Lactée** : analyse spectroscopique de vitesses radiales par pointage télescopique.
+* **Projets & Parcours renforcé :**
+  * **Mécanique spatiale** : optimisation de trajectoire d'une sonde par résolution numérique du problème à $N$ corps.
+  * **Initiation à la recherche (French Physicists Tournament)** : étude théorique, bibliographie et modélisation expérimentale sur des problèmes ouverts.
+  * **Physique du climat (Parcours L2)** : modélisation et résolution numérique d'équations différentielles appliquées au climat.
+
+---
+
+## 🔬 Expériences de Recherche
+
+### Stage de Recherche M2 — Méthode de correction de l’erreur de dispersion pour le schéma différences finies en électromagnétisme
+**Office National d'Etudes et Recherches Aérospatiales (ONERA)** | *Toulouse, France* | **Mars 2026 — Août 2026**
+
+- **Sujet** : Correction de la dispersion numérique du schéma FDTD de Yee sur de grands domaines de calculs sans altérer la finesse du maillage spatio-temporel ($\times 16$ en temps de calcul et $\times 8$ en mémoire pour diviser l'erreur par 4).
+- **Méthodes** : Correction de dispersion $\mathcal{O}(k^4)$ • Approximant rationnel de Padé [1/1] • Causalité spectrale ($v_{p,\text{num}} \le c$) • Test de stabilité de Von Neumann 
+- **Résultats** : Précision de phase $\times 10^3$ ($>14\text{M}$ périodes) • Suppression des modes superlumineux • Stabilité long terme & causalité préservée
+
+[Problématique complète & présentation ↗](research.html#pres-stage-m2-onera){.btn .btn-outline-primary .btn-sm role="button"}
+
+### Stage de Recherche M2 — Contraintes cosmologiques sur la densité de matière
+**Institut de Recherche en Astrophysique et Planétologie (IRAP)** | *Toulouse, France* | **Mars 2025 — Août 2025**
+
+- **Sujet** : Reformulation de la tension de Hubble ($5\sigma$) en tension sur le paramètre de densité $\omega_m = \Omega_m h^2$ ($\Lambda\text{CDM}$).
+- **Méthodes** : Analyse fréquentiste de SNe Ia (modules de distance) • Traitement, fusion et dédoublonnage de `Pantheon+` & `DES-SN5YR`.
+- **Résultats** : Contraintes $\Omega_m = 0{,}352 \pm 0{,}014$ (SNe Ia) et $\Omega_m = 0{,}320 \pm 0{,}007$ (+ BAO) • Tension à $4{,}7\sigma$ sur $\omega_m$ suggérant une origine géométrique.
+
+[Problématique complète & présentation ↗](research.html#stage-m2-irap){.btn .btn-outline-primary .btn-sm role="button"}
+
+
+### Stage de Recherche M1 — Réduction Spectroscopique X-shooter & Candidats DESI
+*Laboratoire d'Astrophysique de Marseille (LAM)* | **Marseille/France** | **Avril 2024 — Juin 2024**
+
+- **Sujet** : Mesurer avec précision les redshifts spectroscopiques d'un échantillon de 1 014 candidats de systèmes de lentillage gravitationnel fort identifiés par DECam, afin de contraindre les modèles cosmologiques (matière noire, énergie noire, croissance des structures) via le spectrographe VLT/X-SHOOTER.
+- **Méthodes et Outils** : Réduction `X-SHOOTER` (UVB, VIS, NIR) • Identification de raies d'émission/absorption • Mesure de redshifts spectroscopiques ($z$).
+- **Résultats** : Mesure de $z_{\text{spec}}$ pour 11 lentilles fortes DESI ($0{,}44 \le z \le 0{,}91$, $\langle z \rangle \approx 0{,}67$), fournissant des contraintes clés pour la modélisation de la matière noire. Correction avancée des artefacts spectraux et biais de fusion d'ordres sur VLT/X-shooter.  
+[Problématique complète & présentation ↗](research.html#stage-m1-lam){.btn .btn-outline-primary .btn-sm role="button"}
+
+### Stage d'Initiation aux Méthodes d'Observation (SIMO) — Observations Astrophysiques
+**Observatoire de Haute-Provence (OHP)** | *Saint-Michel-l'Observatoire/France* | **Oct. 2023**
+
+- **Observation** : Planification de nuit, pointage de télescope et acquisition photométrique en optique visible.
+- **Traitement de données** : Réduction CCD (`dark`, `flat`, `bias`) • Coordonnées $\text{RA/DEC}$ • Composition RVB
+- **Résultats** : Traitement d'objets étendus et ponctuels (galaxies, nébuleuses, étoiles doubles).
+
+### Stage d'Initiation à la Recherche — Découverte des impuretés quantique dans un réseau cristallin
+**Centre de Physique Théorique (CPT)** | *Marseille/France* | **Janvier 2022 — Avril 2022**
+
+- **Sujet** : Étude théorique sur la localisation des électrons et la propagation des paquets d'ondes au sein des réseaux cristallins.
+- **Méthodes** : Utilisation d'Hamiltoniens localisés avec des interactions entre voisins les plus prochesà la manière de Feynmann
+- **Résultats** : Compréhension théorique détaillée du phénomène d'impuretés quantiques et de localisation d'électrons dans un cristal.
+
+---
+
+## 🛠️ Compétences Techniques
+
+| Domaine | Compétences & Outils |
+|---|---|
+| **Langages & Calcul** | Python (`Astropy`, `SciPy`, `NumPy`, `Matplotlib`, `Pandas`), Fortran90, Bash, C++, Arduino|
+| **Méthodes numériques** | Différences Finies, Elements Finis, Solveurs non linéaires|
+| **Astrophysique** | Analyse statistiques, Reduction pipelines de traitement de données, Spectroscopie haute résolution|
+| **Rédaction & Publication** | LaTeX, Quarto, BibTeX / Natbib, Markdown, Git / GitHub |
+| **Langues** | Français (langue maternelle), Anglais (courant, lecture/rédaction d'articles scientifiques), Espagnol (scolaire)|
+
+---
+
+## 📄 Livrables & Présentations
+
+- **Présentations de soutenance :**
+  - [*Strong lensing redshift distribution from VLT spectroscopic observations* ↗](research.html#pres-stage-m1-lam){.btn .btn-outline-primary .btn-sm role="button"}
+  - [*Cosmological constraints based on the density parameter of the Universe* ↗](research.html#pres-stage-m2-irap){.btn .btn-outline-primary .btn-sm role="button"}
+- **Articles et Publications :**
+  - [*XShooter DESI Lens Program: Sample characterization* ↗](research.html#article-stage-m1-lam){.btn .btn-outline-primary .btn-sm role="button"}

@@ -1,0 +1,22 @@
+---
+title: "Christophe BOGHOSSIAN"
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/christophe-boghossian-943114285/
+    - icon: github
+      text: GitHub
+      href: https://github.com/
+    - icon: envelope
+      text: Email
+      href: mailto:boghossian.christophe@gmail.com
+---
+
+Bienvenue sur mon site personnel. Futur Doctorant en Mathématiques Appliquées sur le site CESTA du Comissariat de l'Energie Atomique (CEA), mes travaux porteront sur des mathématiques appliquées aux méthodes numériques de maillage.
+
+### Domaines d'expertise & Intérêts
+* Physique 
+* Modélisation & simulations numériques
+* Mathématiques pour la Physique 

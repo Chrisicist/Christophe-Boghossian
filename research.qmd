@@ -1,0 +1,72 @@
+---
+title: "Recherche, Stages & Publications"
+bibliography: ref.bib
+nocite: |
+  @*
+---
+
+## Publications & Preprints
+* E. Jullo, **C. Boghossian**, L. Chapel, F. Urcelay, C. Storfer, X. Huang, R. Gavazzi, J.-K. Krogager, A. Cikota, *"XShooter DESI Lens Program: Sample characterization"*, Preprint arXiv:2607.08562 (2026). [[arXiv](https://arxiv.org/abs/2607.08562)]
+
+
+---
+
+## Travaux de recherche
+
+### Stage de M2 — Méthode de correction de l’erreur de dispersion pour le schéma différences finies en électromagnétisme
+**Office National d'Etudes et de Recherches Aérospatiales (O.N.E.R.A.)** | *Mars – Août 2026*
+
+* **<ins>Problématique :<ins>** Réduire l'erreur de dispersion numérique du schéma FDTD de Yee pour la simulation des équations de Maxwell sur de grands domaines, sans subir le surcoût computationnel prohibitif du raffinement de maillage classique ($\times 16$ en temps de calcul et $\times 8$ en mémoire pour diviser l'erreur par 4).
+
+* **<ins>Méthodes & Modélisation numérique :</ins>**
+  * **Correction de dispersion ($\mathcal{O}(k^4)$) :** Modification des coefficients de différences finies d'ordre 2 par un paramètre $\alpha$, repoussant l'erreur prépondérante du 2ᵉ au 4ᵉ ordre de précision ($k_{\text{corr}} = k_{\text{phys}} + \mathcal{O}(k_{\text{phys}}^4)$).
+  * **Formulation rationnelle de Padé [1/1] ($\alpha_{\text{Padé}}$) :** Unification algébrique palliant le caractère sous-lumineux de la forme polynomiale ($\alpha_1$) et le régime superlumineux instable de la forme inverse ($\alpha_2$). Elle assure le filtrage des hautes fréquences et garantit le respect strict de la causalité ($v_{p,\text{num}} \le c$).
+  * **Analyse de stabilité de Von Neumann :** Validation théorique et numérique de la stabilité dans le domaine $0 < \text{CFL} < 1$, sans surcoût computationnel notable.
+
+* **<ins>Résultats & Performances :</ins>**
+  * **Gain de précision spectaculaire :** Repoussement du seuil critique d'une période d'erreur de phase de 2 200 périodes (schéma de Yee classique) à plus de 14 millions de périodes simulées (gain de plus de 3 ordres de grandeur).
+  * **Conservatisme physique :** Élimination totale des propagations superlumineuses et des biais de surcompensation, garantissant la stabilité à long terme. 
+
+* **<ins>Livrables</ins>:**  
+  <span id="pres-stage-m2-onera"></span>
+  [📄 Télécharger la présentation du Stage ONERA (PDF)](files/Defense_Internship_M2_ONERA.pdf){target="_blank"}
+
+### Stage de M2 — Contraintes cosmologiques sur le paramètre de densité de matière de l'Univers {#stage-m2-irap}
+**Institut de Recherche en Astrophysique et Planétologie (IRAP / CNRS)** | *Mars – Août 2025*
+
+- **<ins>Problématique</ins>:** Reformuler la tension de Hubble à $5\sigma$ comme une tension sur le paramètre de densité $\omega_m = \Omega_m h^2$ dans le cadre $\Lambda\text{CDM}$, afin de s'appuyer sur les contraintes directes issues des fluctuations du fond diffus cosmologique plutôt que sur la constante $H_0$.
+
+- **<ins>Méthodes & Analyse</ins>:**
+  - **Analyse d'observables :** Exploitation des chandelles standard (SNe Ia) via leurs modules de distance pour établir une liaison directe avec la distance de luminosité.
+  - **Analyse statistique :** Mise en œuvre d'une approche fréquentiste, optimale pour les modèles à 1 ou 2 paramètres et adaptée aux grands jeux de données.
+  - **Combinaison de jeux de données :** Analyse conjointe et dédoublonnage strict des échantillons **DES-SN5YR** et **Pantheon+**.
+
+- **<ins>Résultats & Conclusions</ins>:**
+  - **Nouvelles contraintes :**
+    - **Analyse conjointe (DES-SN5YR + Pantheon+) :** $\Omega_m = 0{,}352 \pm 0{,}014$ (soit $\omega_m = 0{,}188 \pm 0{,}009$).
+    - **Analyse conjointe (+ DESI DR2 BAO) :** Lève les dégénérescences et affine la précision : $\Omega_m = 0{,}320 \pm 0{,}007$.
+  - **Tension à $4{,}7\sigma$ :** Désaccord marqué entre les données locales de SNe Ia et les mesures du FDC (Planck), étendant la tension de $H_0$ à la densité de matière $\omega_m$.
+  - **Effets géométriques & Interprétation :** Suggère une origine géométrique à la tension, nécessitant d'explorer une nouvelle physique (énergie noire variable) ou d'éventuels biais systématiques.
+
+- **<ins>Livrables</ins>:**  
+  <span id="pres-stage-m2-irap"></span>
+  [📄 Télécharger la présentation du Stage IRAP (PDF)](files/Defense_Internship_M2.pdf){target="_blank"}
+
+### Stage de M1 — Distribution en redshift des lentilles fortes à partir des observations spectroscopiques du VLT {#stage-m1-lam}
+**Laboratoire d'Astrophysique de Marseille (L.A.M. / CNRS)** | *Mai – Juin 2024*
+
+* **<ins>Problématique :<ins>** Mesurer avec précision les redshifts spectroscopiques (des lentilles et des sources en arrière-plan) pour un échantillon de 1 014 candidats de lentillage fort identifiés par DECam, afin de contraindre les modèles cosmologiques (matière noire, énergie noire, croissance des structures) via le spectrographe VLT/X-SHOOTER.
+
+* **<ins>Méthodes & Analyse :<ins>**
+  * **Traitement de données :** Réduction des observations X-SHOOTER issues des archives de l'ESO via des pipelines de traitement standardisés.
+  * **Analyse spectrale :** Extraction systématique des spectres sur les trois bras spectraux (UVB, VIS, NIR) et identification des raies d'émission et d'absorption caractéristiques.
+  * **Mesures :** Détermination des redshifts spectroscopiques des lentilles cibles et des sources en arrière-plan.
+
+* **<ins>Résultats :<ins>** 
+  * **Chaîne de traitement des données :** Maîtrise complète du flux de réduction et d'extraction interactive appliqué aux spectres Échelle de VLT/X-shooter.
+  * **Contrôle Qualité :** Démonstration de l'impact essentiel des vérifications par déplacement de la fente et du suivi du ciel pour corriger les artefacts de détecteur et les biais de fusion d'ordres.
+  * **Contribution Scientifique :** Détermination fiable du $z_{\text{spec}}$ sur 11 systèmes majeurs de lentilles fortes de DESI, avec un redsfhit moyen de **$\langle z_{\text{lens}} \rangle = 0.6728$** ou **$0.7065$**, selon les ambiguités de résolution de certains systèmes de lentilles dégénérés, répartis entre un redshift minimum **$z_{\text{min}} = 0.4410$** et maximum **$z_{\text{max}} = 0.91$**, établissant des contraintes d'entrée solides pour la modélisation du profil de masse de la matière noire.
+
+* **<ins>Livrables :<ins>** Publication d'un article scientifique (*Preprint arXiv:2607.08562*).
+
+[📄 Télécharger la présentation du Stage M1(PDF)](files/Defense_Internship_M1.pdf){#pres-stage-m1-lam}| [arXiv:2607.08562](https://arxiv.org/abs/2607.08562){#article-stage-m1-lam}
